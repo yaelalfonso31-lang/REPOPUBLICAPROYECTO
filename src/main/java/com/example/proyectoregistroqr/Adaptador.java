@@ -4,14 +4,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
-public class AsistenciaAdapter extends RecyclerView.Adapter<AsistenciaAdapter.ViewHolder> {
+public class Adaptador extends RecyclerView.Adapter<Adaptador.ViewHolder> {
 
-    private List<Asistencia> listaAsistencias;
+    private List<TablaAsistencias> listaAsistencias;
     private OnItemClickListener listener;
 
     public interface OnItemClickListener {
@@ -19,7 +20,7 @@ public class AsistenciaAdapter extends RecyclerView.Adapter<AsistenciaAdapter.Vi
         void onEliminarClick(int position);
     }
 
-    public AsistenciaAdapter(List<Asistencia> listaAsistencias, OnItemClickListener listener) {
+    public Adaptador(List<TablaAsistencias> listaAsistencias, OnItemClickListener listener) {
         this.listaAsistencias = listaAsistencias;
         this.listener = listener;
     }
@@ -27,15 +28,19 @@ public class AsistenciaAdapter extends RecyclerView.Adapter<AsistenciaAdapter.Vi
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_asistencia, parent, false);
+        // Vinculamos tu layout específico para la fila
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_tabla_asistencias, parent, false);
         return new ViewHolder(view, listener);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        Asistencia asistencia = listaAsistencias.get(position);
+        TablaAsistencias asistencia = listaAsistencias.get(position);
+
         holder.tvMatricula.setText(asistencia.getMatricula());
+        holder.tvNombre.setText(asistencia.getNombre()); // Muestra el nombre
         holder.tvFecha.setText(asistencia.getFecha());
+        holder.tvHora.setText(asistencia.getHora());     // Muestra la hora
     }
 
     @Override
@@ -44,13 +49,15 @@ public class AsistenciaAdapter extends RecyclerView.Adapter<AsistenciaAdapter.Vi
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        TextView tvMatricula, tvFecha;
-        Button btnEditar, btnEliminar;
+        TextView tvMatricula, tvNombre, tvFecha, tvHora;
+        ImageButton btnEditar, btnEliminar;
 
         public ViewHolder(@NonNull View itemView, OnItemClickListener listener) {
             super(itemView);
             tvMatricula = itemView.findViewById(R.id.tvMatricula);
             tvFecha = itemView.findViewById(R.id.tvFecha);
+            tvNombre = itemView.findViewById(R.id.tvNombre);
+            tvHora = itemView.findViewById(R.id.tvHora);
             btnEditar = itemView.findViewById(R.id.btnEditar);
             btnEliminar = itemView.findViewById(R.id.btnEliminar);
 

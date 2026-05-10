@@ -18,7 +18,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoRegistroQR">
         <activity
-            android:name=".gestion"
+            android:name=".Informes"
+            android:exported="false" />
+        <activity
+            android:name=".GestionActivity"
             android:exported="false" />
         <activity
             android:name=".TablaAsistencias"
