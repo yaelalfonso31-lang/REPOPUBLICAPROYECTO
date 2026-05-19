@@ -1,5 +1,29 @@
 <resources>
-    <string name="app_name">ProyectoRegistroQR</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="regla_1"><![CDATA[<b>Formato:</b> Competencia 1 vs 1, eliminación directa]]></string>
+    <string name="regla_2"><![CDATA[<b>Juego:</b> Mortal Kombat 11 Ultimate]]></string>
+    <string name="regla_3"><![CDATA[<b>Rondas:</b> Al mejor de 3 rounds por partida]]></string>
+    <string name="regla_4"><![CDATA[<b>Sets:</b> Al mejor de 3 partidas hasta semifinales]]></string>
+    <string name="regla_5"><![CDATA[<b>Final:</b> Al mejor de 5 partidas]]></string>
+    <string name="regla_6"><![CDATA[<b>Controles:</b> Se permiten mandos oficiales de PS5, Xbox Series y PC]]></string>
+    <string name="regla_7"><![CDATA[<b>Prohibido:</b> Modificar configuraciones del juego durante partidas]]></string>
+    <string name="regla_8"><![CDATA[<b>Conducta:</b> Respeto hacia oponentes y organizadores]]></string>
+    <string name="regla_9"><![CDATA[<b>Descalificación:</b> Por no presentarse a la hora programada]]></string>
+    <string name="regla_10"><![CDATA[<b>Streaming:</b> Permitido con mención al torneo]]></string>
+
+
+        <string name="base_req_1">&#8226; Ser mayor de 15 años</string>
+        <string name="base_req_2">&#8226; Tener cuenta activa en la plataforma correspondiente</string>
+        <string name="base_req_3">&#8226; Registro completo en el formulario oficial</string>
+        <string name="base_req_4">&#8226; Asistir al lugar físico del torneo (Auditorio BUAP)</string>
+
+        <string name="base_prem_1"><![CDATA[&#8226; <b>1er Lugar:</b> $5,000 MXN + Trofeo + Juego Mortal Kombat 1]]></string>
+        <string name="base_prem_2"><![CDATA[&#8226; <b>2do Lugar:</b> $2,500 MXN + Medalla]]></string>
+        <string name="base_prem_3"><![CDATA[&#8226; <b>3er Lugar:</b> $1,000 MXN + Medalla]]></string>
+        <string name="base_prem_4"><![CDATA[&#8226; <b>Participación:</b> Diploma digital a todos los competidores]]></string>
+
+        <string name="base_fecha_1"><![CDATA[&#8226; <b>Registro:</b> 1-30 de Marzo 2026]]></string>
+        <string name="base_fecha_2"><![CDATA[&#8226; <b>Clasificatorias:</b> 5-6 de Abril 2026]]></string>
+        <string name="base_fecha_3"><![CDATA[&#8226; <b>Finales:</b> 12 de Abril 2026]]></string>
+        <string name="base_fecha_4"><![CDATA[&#8226; <b>Entrega de Premios:</b> 12 de Abril 2026 (al término)]]></string>
+
 </resources>

@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-
-    <color name="verde_exito">#2ECC71</color>
-    <color name="azul_primary">#0026E9</color>
-    <color name="rojo_error">#F44336</color>
-    <color name="green">#03dac6</color>
-    <color name="morado">#3B38FF</color>
-    <color name="azul_cielo">#008EEA</color>
-    <color name="magenta">#E11584</color>
+    <color name="mk_black">#000000</color>
+    <color name="mk_dark_gray">#111111</color>
+    <color name="mk_gray">#222222</color>
+    <color name="mk_red">#CC0000</color>
+    <color name="mk_red_dark">#AA0000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="text_secondary">#CCCCCC</color>
 </resources>

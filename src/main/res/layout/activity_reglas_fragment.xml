@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mk_black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/mk_dark_gray"
+            app:cardCornerRadius="10dp"
+            app:strokeColor="@color/mk_gray"
+            app:strokeWidth="2dp"
+            app:cardElevation="8dp"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Reglas del Torneo"
+                    android:textColor="@color/mk_red"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginBottom="12dp"/>
+
+                <View
+                    android:layout_width="150dp"
+                    android:layout_height="3dp"
+                    android:background="@color/mk_red"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="24dp"/>
+
+                <TextView
+                    style="@style/ReglaItemStyle"
+                    android:text="@string/regla_1" />
+                <TextView
+                    style="@style/ReglaItemStyle"
+                    android:text="@string/regla_2" />
+                <TextView
+                    style="@style/ReglaItemStyle"
+                    android:text="@string/regla_3" />
+                <TextView
+                    style="@style/ReglaItemStyle"
+                    android:text="@string/regla_4" />
+                <TextView
+                    style="@style/ReglaItemStyle"
+                    android:text="@string/regla_5" />
+                <TextView
+                    style="@style/ReglaItemStyle"
+                    android:text="@string/regla_6" />
+                <TextView
+                    style="@style/ReglaItemStyle"
+                    android:text="@string/regla_7" />
+                <TextView
+                    style="@style/ReglaItemStyle"
+                    android:text="@string/regla_8" />
+                <TextView
+                    style="@style/ReglaItemStyle"
+                    android:text="@string/regla_9" />
+                <TextView
+                    style="@style/ReglaItemStyle"
+                    android:text="@string/regla_10" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</ScrollView>

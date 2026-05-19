@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_inicio"
+        android:icon="@drawable/ic_home"
+        android:title="Inicio"/>
+    <item
+        android:id="@+id/nav_reglas"
+        android:icon="@drawable/ic_rules"
+        android:title="Reglas"/>
+    <item
+        android:id="@+id/nav_bases"
+        android:icon="@drawable/ic_bases"
+        android:title="Bases"/>
+</menu>

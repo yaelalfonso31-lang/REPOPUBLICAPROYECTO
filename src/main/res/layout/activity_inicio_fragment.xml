@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mk_black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/mk_dark_gray"
+            app:cardCornerRadius="10dp"
+            app:strokeColor="@color/mk_gray"
+            app:strokeWidth="2dp"
+            app:cardElevation="8dp"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¡BIENVENIDO AL TORNEO DE MORTAL KOMBAT!"
+                    android:textColor="@color/mk_red"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginBottom="16dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Participa y demuestra tus habilidades."
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:layout_marginBottom="16dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Únete a nosotros para una competencia emocionante llena de desafíos y diversión. ¡Regístrate ahora y sé parte de esta increíble experiencia!"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:lineSpacingMultiplier="1.2"
+                    android:layout_marginBottom="20dp"/>
+
+                <ImageView
+                    android:id="@+id/ivKombatGif"
+                    android:layout_width="280dp"
+                    android:layout_height="180dp"
+                    android:scaleType="centerCrop"
+                    android:layout_marginBottom="20dp"
+                    android:contentDescription="Mortal Kombat"
+                    android:src="@drawable/kombat"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Este torneo tiene como objetivo promover la competencia sana, el desarrollo de habilidades de juego y la comunidad gamer alrededor de Mortal Kombat."
+                    android:textColor="@color/text_secondary"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:lineSpacingMultiplier="1.2"
+                    android:layout_marginBottom="24dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnRegistrateAqui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Regístrate Aquí"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/mk_red"
+                    android:paddingStart="32dp"
+                    android:paddingEnd="32dp"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    app:icon="@drawable/ic_pencil"
+                    app:cardCornerRadius="5dp"/>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</ScrollView>

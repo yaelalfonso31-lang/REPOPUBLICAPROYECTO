@@ -1,4 +1,4 @@
-package com.example.proyectoregistroqr;
+package com.example.torneoapp;
 
 import org.junit.Test;
 
